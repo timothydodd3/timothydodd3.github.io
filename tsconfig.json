@@ -1,11 +1,14 @@
 {
-    "compilerOptions": {
-        "module": "commonjs"
-    },
-
-    "include":
-    [
-        "index.ts"
-    ],
-    "exclude": []
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["index.tsx"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
