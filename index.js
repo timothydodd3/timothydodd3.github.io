@@ -1,7 +1,18 @@
-import { jsx as _jsx, Fragment as _Fragment, jsxs as _jsxs } from "react/jsx-runtime";
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-function App() {
-    return (_jsxs(_Fragment, { children: [_jsx("header", { children: "Hi There!" }), _jsx("h3", { children: "Welcome to my site!" }), _jsx("p", { children: "My Name is Tim, and I'm a Software Engineer specializing in C++. This is my first personal TypeScript project & eventually will become my professional online portfolio." }), _jsx("p", { children: "This site is still under construction, Feel free to check whenever for updates!" })] }));
-}
-ReactDOM.createRoot(document.getElementById('root')).render(_jsx(React.StrictMode, { children: _jsx(App, {}) }));
+// The Title Page
+document.title = "Welcome to My Site!";
+var welcomeMsg = "Hi There!";
+var welcomeHead = document.createElement("header");
+welcomeHead.textContent = welcomeMsg;
+var introMsg = document.createElement("h3");
+introMsg.textContent = "Welcome to my site!";
+var homeBody = document.createElement("p");
+homeBody.textContent = "My Name is Tim, and I'm a Software Engineer specializing in C++." +
+    " This is my first personal Typescript project & eventually" +
+    " will become my professional online portfolio.";
+var disclaimer = document.createElement("p");
+disclaimer.textContent = "This site is still under construction, " +
+    " Feel free to check whenever for updates!";
+document.body.append(welcomeHead);
+document.body.append(introMsg);
+document.body.append(homeBody);
+document.body.append(disclaimer);
