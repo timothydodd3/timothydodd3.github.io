@@ -1,0 +1,24 @@
+name: Build My Webpage
+#Part Demo, part build the page. Hopefully all working.
+run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+on: [push]
+jobs: 
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - name: Check out repository code
+        uses: actions/checkout@v6
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install NPM Dependencies
+        run: npm ci
+
+      - name: Compile the TypeScript code
+        run: 
+          npx tsc
+      - run: echo "🍏 This job's status is ${{ job.status }}."
+        

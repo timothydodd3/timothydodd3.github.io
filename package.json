@@ -1,0 +1,23 @@
+{
+  "name": "timothydodd3.github.io",
+  "version": "1.0.0",
+  "description": "My Personal Webpage",
+  "homepage": "https://github.com/timothydodd3/timothydodd3.github.io#readme",
+  "bugs": {
+    "url": "https://github.com/timothydodd3/timothydodd3.github.io/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timothydodd3/timothydodd3.github.io.git"
+  },
+  "license": "UNLICENSED",
+  "author": "Timothy Dodd",
+  "type": "commonjs",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "npx tsc"
+  },
+  "dependencies": {
+    "typescript": "^6.0.3"
+  }
+}
